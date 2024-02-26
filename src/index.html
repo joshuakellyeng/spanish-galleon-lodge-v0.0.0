@@ -1,5 +1,5 @@
 ---
-title: 'Pixel Perfect Websites'
+title: 'Casa Nautilus'
 description: 'Meta description for the page'
 preloadImg: '/assets/images/landing.jpg'
 permalink: '/'
@@ -8,342 +8,507 @@ eleventyNavigation:
   order: 100
 ---
 
-{% extends "layouts/base.html" %}
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/local.css" />
+<link rel="stylesheet" href="/assets/css/critical.css" />
 
-{% block head %}
-    <link rel="stylesheet" href="/assets/css/local.css" />
-    <link rel="stylesheet" href="/assets/css/critical.css" />
+<!-- Script for Netlify Identity -->
+<script
+	defer
+	src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+></script>
+<script defer>
+	if (window.netlifyIdentity) {
+		window.netlifyIdentity.on('init', (user) => {
+			if (!user) {
+				window.netlifyIdentity.on('login', () => {
+					document.location.href = '/admin/';
+				});
+			}
+		});
+	}
+</script>
+{% endblock %} {% block body %}
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
 
-    <!-- Script for Netlify Identity -->
-    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script defer>
-        if (window.netlifyIdentity) {
-            window
-                .netlifyIdentity
-                .on('init', (user) => {
-                    if (!user) {
-                        window
-                            .netlifyIdentity
-                            .on('login', () => {
-                                document.location.href = '/admin/';
-                            });
-                    }
-                });
-        }
-    </script>
-{% endblock %}
+<section id="hero-219">
+	<div class="cs-container">
+		<h1 class="cs-title">Discover Tranquility at Casa Nautilus</h1>
+		<p class="cs-text">Your Oasis in Cadiz</p>
+		<a href="" class="cs-button-solid"> Reserve Your Stay </a>
+	</div>
 
-{% block body %}
+	<!-- Background Image -->
+	<picture class="cs-background">
+		<source media="(max-width: 600px)" srcset="./assets/images/tower.webp" />
+		<source media="(min-width: 601px)" srcset="./assets/images/tower.webp" />
+		<img
+			decoding="async"
+			src="./assets/images/tower.webp"
+			alt="kitchen"
+			width="2250"
+			height="1500"
+			aria-hidden="true"
+		/>
+	</picture>
+</section>
 
-    <!-- ============================================ -->
-    <!--                    Hero                      -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
 
-    <section id="hero">
-        <div class="cs-container">
-            <div class="cs-flex-group">
-                <span class="cs-topper">mountain hiking society</span>
-                <h1 class="cs-title">Explore the World with Exciting People</h1>
-                <p class="cs-text">
-                    Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Nibh tortor id aliquet lectus proin nibh condimentum.
-                </p>
-                <a href="/about" class="cs-button-solid">Explore More</a>
-                <a href="/contact" class="cs-button-transparent">
-                    <img
-                    class="cs-img"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
-                    alt="play icon"
-                    width="17"
-                    height="17" />
-                    Get in Touch
-                </a>
-            </div>
-        </div>
+<section id="services-285">
+	<div class="cs-container">
+		<div class="cs-content">
+			<span class="cs-topper">Best-In-Class</span>
+			<h2 class="cs-title">Our Amenaties</h2>
+			<p class="cs-text">
+				Casa Nautiluz offers a range of amenities tailored to enhance the
+				comfort and convenience of guests during their stay in Cadiz, Spain.
+				From elegantly appointed rooms exuding charm and sophistication to
+				personalized service that anticipates every need, guests can expect a
+				seamless experience. Whether unwinding in the cozy accommodations or
+				discovering the rich history of Cadiz, Casa Nautiluz promises a
+				memorable retreat in the heart of this enchanting city.
+			</p>
+		</div>
+		<ul class="cs-card-group">
+			<li class="cs-item">
+				<a href="" class="cs-link">
+					<picture class="cs-picture">
+						<img
+							class="cs-icon"
+							src="https://csimg.nyc3.digitaloceanspaces.com/Services/hand.svg"
+							loading="lazy"
+							decoding="async"
+							alt="icon"
+							width="38"
+							height="52"
+							aria-hidden="true"
+						/>
+					</picture>
+					<h3 class="cs-h3">Air Conditioning / Heating</h3>
+					<p class="cs-item-text">
+						Enjoy personalized comfort with heating and cooling units in every
+						room, ensuring an optimal and cozy ambiance throughout your stay in
+						Cadiz.
+					</p>
+				</a>
+			</li>
+			<li class="cs-item">
+				<a href="" class="cs-link">
+					<picture class="cs-picture">
+						<img
+							class="cs-icon"
+							src="https://csimg.nyc3.digitaloceanspaces.com/Services/hand.svg"
+							loading="lazy"
+							decoding="async"
+							alt="icon"
+							width="38"
+							height="52"
+							aria-hidden="true"
+						/>
+					</picture>
+					<h3 class="cs-h3">Wheelchair Accessible</h3>
+					<p class="cs-item-text">
+						Experience convenience and accessibility at Casa Nautilus, where our
+						elevator ensures effortless mobility, allowing you to navigate our
+						boutique hotel with ease.
+					</p>
+				</a>
+			</li>
+			<li class="cs-item">
+				<a href="" class="cs-link">
+					<picture class="cs-picture">
+						<img
+							class="cs-icon"
+							src="https://csimg.nyc3.digitaloceanspaces.com/Services/paint.svg"
+							loading="lazy"
+							decoding="async"
+							alt="icon"
+							width="38"
+							height="52"
+							aria-hidden="true"
+						/>
+					</picture>
+					<h3 class="cs-h3">Free Wi-Fi</h3>
+					<p class="cs-item-text">
+						Stay seamlessly connected with complimentary high-speed Wi-Fi,
+						ensuring you can effortlessly blend your coastal retreat with work
+						or leisure.
+					</p>
+				</a>
+			</li>
+			<li class="cs-item">
+				<a href="" class="cs-link">
+					<picture class="cs-picture">
+						<img
+							class="cs-icon"
+							src="https://csimg.nyc3.digitaloceanspaces.com/Services/paint.svg"
+							loading="lazy"
+							decoding="async"
+							alt="icon"
+							width="38"
+							height="52"
+							aria-hidden="true"
+						/>
+					</picture>
+					<h3 class="cs-h3">Laundry Service</h3>
+					<p class="cs-item-text">
+						Our boutique hotel offers hassle-free laundry services, ensuring
+						that you can enjoy a fresh and relaxing experience leaving you more
+						time to immerse yourself in the beauty of Cadiz.
+					</p>
+				</a>
+			</li>
+			<li class="cs-item">
+				<a href="" class="cs-link">
+					<picture class="cs-picture">
+						<img
+							class="cs-icon"
+							src="https://csimg.nyc3.digitaloceanspaces.com/Services/paint.svg"
+							loading="lazy"
+							decoding="async"
+							alt="icon"
+							width="38"
+							height="52"
+							aria-hidden="true"
+						/>
+					</picture>
+					<h3 class="cs-h3">Room Services</h3>
+					<p class="cs-item-text">
+						Comprehensive room services, including housekeeping, concierge,
+						ensuring a comfortable and enjoyable stay for guests at our hotel.
+					</p>
+				</a>
+			</li>
+			<li class="cs-item">
+				<a href="" class="cs-link">
+					<picture class="cs-picture">
+						<img
+							class="cs-icon"
+							src="https://csimg.nyc3.digitaloceanspaces.com/Services/paint.svg"
+							loading="lazy"
+							decoding="async"
+							alt="icon"
+							width="38"
+							height="52"
+							aria-hidden="true"
+						/>
+					</picture>
+					<h3 class="cs-h3">Rooftop Terrace</h3>
+					<p class="cs-item-text">
+						Indulge in stunning vistas at Casa Nautilus' rooftop terrace,
+						offering breathtaking views of Cadiz and the ocean.
+					</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+</section>
 
-        <!-- Background Image -->
-        <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
-            <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="new home" width="2500" height="1667" loading="eager">
-        </picture>
-    </section>
+<!-- ============================================ -->
+<!--                     CTA                      -->
+<!-- ============================================ -->
 
-    <!-- ============================================ -->
-    <!--                  Services                    -->
-    <!-- ============================================ -->
+<section id="cta-51">
+	<div class="cs-container">
+		<div class="cs-content">
+			<span class="cs-topper">Welcome to Casa Nautilus</span>
+			<h2 class="cs-title">A Coastal Beauty with Historic Charm</h2>
+			<p class="cs-text">
+				Experience the boutique allure of Casa Nautilus in Cadiz's heart. Unwind
+				in uniquely designed rooms that perfectly capture the essence of coastal
+				chic.
+			</p>
+			<a href="/about" class="cs-button-solid">Explore Our History</a>
+		</div>
+	</div>
+	<!-- Background Image-->
+	<picture class="cs-picture">
+		<source media="(max-width: 600px)" srcset="./assets/images/skyline.webp" />
+		<source media="(min-width: 601px)" srcset="./assets/images/skyline.webp" />
+		<img
+			loading="lazy"
+			decoding="async"
+			src="./assets/images/skyline.webp"
+			alt="cabinets"
+			width="1920"
+			height="1280"
+			aria-hidden="true"
+		/>
+	</picture>
+</section>
 
-    <section id="services" class="services">
-        <!-- Get Icons From flaticon.com -->
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service1.svg"
-                alt="appliance"
-                width="48"
-                height="48" />
-            </picture>
-            <h2>Service 1</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service2.svg"
-                alt="appliance"
-                width="48"
-                height="48" />
-            </picture>
-            <h2>Service 2</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service3.svg"
-                alt="appliance"
-                width="48"
-                height="48" />
-            </picture>
-            <h2>Service 3</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-    </section>
+<!-- ============================================ -->
+<!--                    Services                  -->
+<!-- ============================================ -->
 
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
+<section id="services-1355">
+	<div class="cs-container">
+		<div class="cs-content">
+			<span class="cs-topper">Our Services</span>
+			<h2 class="cs-title">
+				We’re Committed to Deliver Top High Quality Services
+			</h2>
+		</div>
+		<ul class="cs-card-group">
+			<li class="cs-item">
+				<a href="" class="cs-link">
+					<h3 class="cs-h3"><span class="cs-span">Growing</span> Businesses</h3>
+				</a>
+				<picture class="cs-background">
+					<source
+						media="(max-width: 600px)"
+						srcset="
+							https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting1.jpg
+						"
+					/>
+					<source
+						media="(min-width: 601px)"
+						srcset="
+							https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting1.jpg
+						"
+					/>
+					<img
+						decoding="async"
+						src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting1.jpg"
+						alt="construction"
+						width="305"
+						height="305"
+						aria-hidden="true"
+					/>
+				</picture>
+			</li>
+			<li class="cs-item">
+				<a href="" class="cs-link">
+					<h3 class="cs-h3">
+						<span class="cs-span">Building</span> Relationships
+					</h3>
+				</a>
+				<picture class="cs-background">
+					<source
+						media="(max-width: 600px)"
+						srcset="
+							https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting2.jpg
+						"
+					/>
+					<source
+						media="(min-width: 601px)"
+						srcset="
+							https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting2.jpg
+						"
+					/>
+					<img
+						decoding="async"
+						src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting2.jpg"
+						alt="construction"
+						width="305"
+						height="305"
+						aria-hidden="true"
+					/>
+				</picture>
+			</li>
+			<li class="cs-item">
+				<a href="" class="cs-link">
+					<h3 class="cs-h3">
+						<span class="cs-span">Operational</span> Excellence
+					</h3>
+				</a>
+				<picture class="cs-background">
+					<source
+						media="(max-width: 600px)"
+						srcset="
+							https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting3.jpg
+						"
+					/>
+					<source
+						media="(min-width: 601px)"
+						srcset="
+							https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting3.jpg
+						"
+					/>
+					<img
+						decoding="async"
+						src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting3.jpg"
+						alt="construction"
+						width="305"
+						height="305"
+						aria-hidden="true"
+					/>
+				</picture>
+			</li>
+		</ul>
+	</div>
+</section>
 
-    <section id="sbs">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img 
-                    class="cs-quote-icon"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
-                    alt="gavel"
-                    width="136"
-                    height="77" />
-                </div>
-                <a href="/about" class="cs-button-solid">More About Us</a>
-            </div>
-        </div>
-    </section>
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
 
-    <!-- ============================================ -->
-    <!--            Extra Content To Rank             -->
-    <!-- ============================================ -->
+<section id="reviews-1672">
+	<div class="cs-container">
+		<div class="cs-content">
+			<span class="cs-topper">Testimonials</span>
+			<h2 class="cs-title">Our Customer Reviews</h2>
+		</div>
+		<ul class="cs-card-group">
+			<li class="cs-item">
+				<div class="cs-flex-group">
+					<picture class="cs-picture">
+						<img
+							class="cs-profile"
+							src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-headshot1.jpeg"
+							decoding="async"
+							alt="profile"
+							width="50"
+							height="50"
+							aria-hidden="true"
+							loading="lazy"
+						/>
+					</picture>
+					<span class="cs-name">
+						Cristina P.
+						<span class="cs-job">May 2023</span>
+					</span>
+				</div>
+				<div class="wrapper">
+					<img
+						class="cs-item-stars"
+						aria-hidden="true"
+						loading="lazy"
+						decoding="async"
+						src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg"
+						alt="stars"
+						width="96"
+						height="16"
+					/>
+					<p class="cs-review">
+						Our stay at Casa Nautilus exceeded all expectations! We were
+						pleasantly surprised by the interior room's tranquility and
+						spaciousness despite the absence of an outside window. It was
+						impeccably clean and equipped with all necessary amenities,
+						including air conditioning, TV, and a hairdryer. The complimentary
+						welcome beer was a thoughtful touch, and mornings on the rooftop
+						terrace with coffee were serene.
+					</p>
+				</div>
+				<!--Quote Icon-->
+				<img
+					class="cs-quote"
+					aria-hidden="true"
+					src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg"
+					decoding="async"
+					alt="quote icon"
+					width="120"
+					height="99"
+				/>
+			</li>
+			<li class="cs-item">
+				<div class="cs-flex-group">
+					<picture class="cs-picture">
+						<img
+							class="cs-profile"
+							src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/review2.png"
+							decoding="async"
+							alt="profile"
+							width="50"
+							height="50"
+							aria-hidden="true"
+							loading="lazy"
+						/>
+					</picture>
+					<span class="cs-name">
+						Maria F.
+						<span class="cs-job">Dec 2023</span>
+					</span>
+				</div>
+				<div class="wrapper">
+					<img
+						class="cs-item-stars"
+						aria-hidden="true"
+						loading="lazy"
+						decoding="async"
+						src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg"
+						alt="stars"
+						width="96"
+						height="16"
+					/>
+					<p class="cs-review">
+						Casa Nautilus offers excellent accommodation right in the heart of
+						Cadiz. The rooms are clean, cozy, and come with all the essentials
+						for a comfortable stay. We particularly enjoyed the nautical theme
+						throughout the hotel, adding to its charm. The location couldn't be
+						better, just steps away from the cathedral and within a convenient
+						10-minute walk from the train station.
+					</p>
+				</div>
+				<!--Quote Icon-->
+				<img
+					class="cs-quote"
+					aria-hidden="true"
+					src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg"
+					decoding="async"
+					alt="quote icon"
+					width="120"
+					height="99"
+				/>
+			</li>
+			<li class="cs-item">
+				<div class="cs-flex-group">
+					<picture class="cs-picture">
+						<img
+							class="cs-profile"
+							src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-headshot2.jpeg"
+							decoding="async"
+							alt="profile"
+							width="50"
+							height="50"
+							aria-hidden="true"
+							loading="lazy"
+						/>
+					</picture>
+					<span class="cs-name">
+						Sarah S.
+						<span class="cs-job">Jun 2023</span>
+					</span>
+				</div>
+				<div class="wrapper">
+					<img
+						class="cs-item-stars"
+						aria-hidden="true"
+						loading="lazy"
+						decoding="async"
+						src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg"
+						alt="stars"
+						width="96"
+						height="16"
+					/>
+					<p class="cs-review">
+						My recent stay at Casa Nautilus was nothing short of delightful!
+						From the moment we arrived, we were impressed by the boutique charm
+						and attentive service. Our interior room, though lacking an outside
+						window, provided a quiet retreat and was equipped with all the
+						necessary amenities. The rooftop terrace, with its captivating
+						views, was a highlight of our mornings. The hotel's attention to
+						detail and affordable rates truly set it apart.
+					</p>
+				</div>
+				<!--Quote Icon-->
+				<img
+					class="cs-quote"
+					aria-hidden="true"
+					src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg"
+					decoding="async"
+					alt="quote icon"
+					width="120"
+					height="99"
+				/>
+			</li>
+		</ul>
+	</div>
+</section>
 
-    <section id="sbs-r">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="560">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="560">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">SEO Ranking</span>
-                <h2 class="cs-title">Talk about a main service keyword</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non tenetur, iure nihil ipsam qui atque commodi id voluptatem nesciunt, quis animi fuga cum doloribus! Eaque laboriosam, unde consectetur iure asperiores ullam. Consequuntur debitis a voluptatibus vitae optio autem explicabo quia neque est quas, in placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus modi laudantium voluptatibus rem libero error minus quia eligendi sapiente eos.
-                </p>
-                <a href="/blog" class="cs-button-solid">Read our Blog</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
-
-    <section id="gallery">
-        <div class="cs-container">
-            <span class="cs-topper">Our Portfolio</span>
-            <h2 class="cs-title">Et orci volutpat, back up generator installations</h2>
-            <div class="cs-image-group">
-                <!-- Row 1-->
-                <div class="cs-row cs-row-1">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port1-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port1.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port1.jpg" alt="new hallway" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port4-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port4.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port4.jpg" alt="new home construction" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port7-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port7.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port7.jpg" alt="building a new wall" loading="lazy" width="400" height="560">
-                    </picture>
-                </div>
-                <!-- Row 2 -->
-                <div class="cs-row cs-row-2">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port2-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port2.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port2.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port5-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port5.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port5.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port8-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port8.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port8.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-                </div>
-                <!-- Row 3 -->
-                <div class="cs-row cs-row-3">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port3-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port3.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port3.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port6-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port6.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port6.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port9-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port9.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port9.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-
-                </div>
-            </div>
-            <a href="/projects" class="cs-button-solid">View Full Gallery</a>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Reviews                    -->
-    <!-- ============================================ -->
-
-    <section id="reviews">
-        <div class="cs-container">
-            <span class="cs-topper">Our Reviews</span>
-            <h2 class="cs-title">Words From Our Customers</h2>
-            <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor volutpat porttitor sagittis nunc nisl. Sagittis sit pellentesque gravida viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo, ornare. Lorem ipsum dolor sit amet.
-            </p>
-            <ul class="cs-card-group">
-                <!-- Review 1 -->
-                <li class="cs-item">
-                    <img
-                    class="cs-item-img"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
-                    alt="profile picture"
-                    width="80"
-                    height="80" />
-                    <p class="cs-item-p">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <span class="cs-reviewer">
-                        Jon Doe
-                        <span class="cs-desc">Homeowner</span>
-                    </span>
-                    <img
-                    class="cs-item-stars"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                    alt="stars"
-                    width="96"
-                    height="16" />
-                </li>
-                <!-- Review 2 -->
-                <li class="cs-item">
-                    <img
-                    class="cs-item-img"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
-                    alt="profile picture"
-                    width="80"
-                    height="80" />
-                    <p class="cs-item-p">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <span class="cs-reviewer">
-                        Jane Doe
-                        <span class="cs-desc">Homeowner</span>
-                    </span>
-                    <img
-                    class="cs-item-stars"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                    alt="stars"
-                    width="96"
-                    height="16" />
-                </li>
-            </ul>
-            <a aria-label="read more reviews" href="/reviews" class="cs-button-solid">Our Reviews</a>
-        </div>
-    </section>
-
-    {% include 'components/cta.html' %}
-{% endblock %}
+{% include 'components/cta.html' %} {% endblock %}
