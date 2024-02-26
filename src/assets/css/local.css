@@ -256,7 +256,7 @@
 		}
 
 		.cs-topper {
-			color: #767676;
+			color: var(--primary);
 		}
 
 		.cs-title {

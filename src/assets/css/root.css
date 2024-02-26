@@ -4,7 +4,7 @@
 	--primaryLight: #639fab;
 	--secondary: #f86624;
 	--secondaryLight: #ff9f1c;
-	--headerColor: #1a1a1a;
+	--headerColor: #1e2434;
 	--bodyTextColor: #4e4b66;
 	--bodyTextColorWhite: #fafbfc;
 	/* 13px - 16px */
@@ -32,7 +32,7 @@ body {
 	text-align: inherit;
 	letter-spacing: 0.1em;
 	font-weight: 700;
-	color: var(--bodyTextColorWhite);
+	color: var(--primary);
 	margin-bottom: 0.25rem;
 	display: block;
 }
@@ -1214,7 +1214,7 @@ body {
 	#footer .left-section .logo {
 		text-align: center;
 		width: auto;
-		height: 2em;
+		height: 7em;
 		margin: auto;
 		margin-bottom: 1.875em;
 		display: inline-block;
@@ -1278,7 +1278,7 @@ body {
 		transition: color 0.3s;
 	}
 	#footer .right-section .lists ul li a:hover {
-		color: var(--primary);
+		color: var(--primaryLight);
 	}
 	#footer .right-section .lists ul h2 {
 		font-size: 1.125rem;
@@ -1354,7 +1354,7 @@ body {
 	}
 	#footer .left-section .logo {
 		text-align: left;
-		height: 2.5rem;
+		height: 8.5rem;
 		margin-left: 0;
 	}
 	#footer .left-section p {
@@ -1385,7 +1385,7 @@ body {
 		content: '';
 		width: 0%;
 		height: 0.125rem;
-		background: var(--primary);
+		background: var(--bodyTextColorWhite);
 		opacity: 1;
 		display: block;
 		position: absolute;
@@ -1408,4 +1408,8 @@ body {
 	body.dark-mode #footer {
 		background: #061623;
 	}
+}
+
+.cs-item {
+	border-radius: 30px;
 }
