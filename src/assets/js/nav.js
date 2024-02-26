@@ -29,7 +29,7 @@ function ariaExpanded() {
 
 document.addEventListener('scroll', (e) => {
 	const scroll = document.documentElement.scrollTop;
-	if (scroll >= 100) {
+	if (scroll > 50) {
 		document.querySelector('body').classList.add('scroll');
 		document.querySelector('header').classList.add('header-scrolled');
 	} else {
