@@ -64,7 +64,7 @@ body {
 	margin: auto;
 	color: var(--primary);
 	padding: 0 1.5rem;
-	background-color: var(--bodyTextColorWhite);
+	background-color: var(--primaryLight);
 	display: inline-block;
 	position: relative;
 	z-index: 1;
@@ -74,6 +74,11 @@ body {
 .cs-button-solid:hover {
 	background-color: var(--primary);
 	color: var(--bodyTextColorWhite);
+}
+
+header .cs-button-solid {
+	background-color: var(--bodyTextColorWhite);
+	color: var(--primary);
 }
 
 /* Fonts and general styles */

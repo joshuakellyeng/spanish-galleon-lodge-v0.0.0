@@ -254,9 +254,8 @@
 			align-items: center;
 		}
 
-		.cs-topper {
-			color: var(--primary);
-		}
+		/* .cs-topper {
+		} */
 
 		.cs-title {
 			max-width: 25ch;
