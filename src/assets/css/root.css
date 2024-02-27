@@ -224,7 +224,7 @@ body {
 	#dark-mode-toggle .cs-moon {
 		z-index: 2;
 		transition: transform 0.3s, opacity 0.3s;
-		fill: #1a1a1a;
+		fill: var(--bodyTextColorWhite);
 	}
 	#dark-mode-toggle .cs-sun {
 		z-index: 1;
