@@ -4,7 +4,7 @@ backend:
 
 local_backend: true
 # change url to a link to the image you want to use, no file paths, must be a URL
-logo_url: https://raw.githubusercontent.com/joshuakellyeng/casa-nautilus-v.0.0.0/00c3ca798283da2e391a3f3b77597ae10fff12cc/src/assets/svgs/casa-nautilus-1.0.svg?token=AETNJ7QJ2ZK7XTGV4MC66E3F33RD6
+logo_url: https://i.ibb.co/nk3x1Tx/Screenshot-from-2024-02-28-07-21-10.png
 
 media_folder: 'src/assets/images/blog'
 public_folder: '/assets/images/blog'
