@@ -252,7 +252,7 @@
     align-items: center;
   }
   #services-1355 .cs-topper {
-    color: #767676;
+    color: var(--primary);
   }
   #services-1355 .cs-title {
     max-width: 25ch;
@@ -370,7 +370,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #services-1355 .cs-topper {
-    color: var(--primary);
+    color: var(--primaryLight);
   }
   body.dark-mode #services-1355 .cs-title {
     color: var(--bodyTextColorWhite);

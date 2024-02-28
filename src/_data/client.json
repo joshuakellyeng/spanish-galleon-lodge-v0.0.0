@@ -1,11 +1,12 @@
 {
-    "name": "Your Home in Cadiz",
-    "email": "help@codestitch.app",
-    "phoneForTel": "555-779-4407",
-    "phoneFormatted": "(555) 779-4407",
+    "name": "Your Hotel Stay In The Heart of Cadiz",
+    "email": "help@casanautiluzcadiz.com",
+    "phoneForTel": "34 603 168 882",
+    "phoneFormatted": "(34) 603 168 882",
     "address": {
         "lineOne": "C. Barrocal 5, Cadiz",
-        "city": "Cádiz,",
+        "lineTwo": "",
+        "city": "Cádiz",
         "state": "España",
         "zip": "11005",
         "mapLink": "https://maps.app.goo.gl/eL3kyqyJSqmiUJ13A"
