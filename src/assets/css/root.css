@@ -1,10 +1,10 @@
 :root {
   /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
-  --primary: #1e2434;
-  --primaryLight: #89e1f3;
-  --secondary: #f86624;
+  --primary: #12234e;
+  --primaryLight: #26a69c;
+  --secondary: #e64f1f;
   --secondaryLight: #ff9f1c;
-  --headerColor: #1e2434;
+  --headerColor: #12234e;
   --bodyTextColor: #4e4b66;
   --bodyTextColorWhite: #fafbfc;
   /* 13px - 16px */
@@ -62,9 +62,9 @@ body {
   text-decoration: none;
   font-weight: 700;
   margin: auto;
-  color: var(--primary);
+  color: var(--bodyTextColorWhite);
   padding: 0 1.5rem;
-  background-color: var(--primaryLight);
+  background-color: var(--secondary);
   display: inline-block;
   position: relative;
   z-index: 1;
@@ -72,7 +72,7 @@ body {
   border-radius: 30px;
 }
 .cs-button-solid:hover {
-  background-color: var(--primary);
+  background-color: var(--primaryLight);
   color: var(--bodyTextColorWhite);
 }
 header .cs-button-solid {
@@ -600,6 +600,9 @@ header .cs-button-solid {
   body.dark-mode #cs-navigation .cs-header {
     color: var(--bodyTextColorWhite);
   }
+  body.dark-mode #cs-navigation .cs-toggle {
+    background-color: var(--dark);
+  }
 }
 /*-- -------------------------- -->
 <---     Navigation Dropdown    -->
@@ -802,7 +805,7 @@ header .cs-button-solid {
     padding: 0;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
-    /* background-color: transparent; */
+    background-color: var(--headerColor);
     position: fixed;
     z-index: 10000;
     transition: transform 0.5s;
@@ -831,7 +834,7 @@ header .cs-button-solid {
     content: '';
     width: 100vw;
     height: 100%;
-    background: transparent;
+    background: var(--headerColor);
     opacity: 1;
     position: absolute;
     display: block;
@@ -959,11 +962,6 @@ header .cs-button-solid {
     margin-left: 1.5rem;
   }
 }
-/* Custom Nav Scroll */
-.header-scrolled {
-  background-color: var(--primary);
-  box-shadow: var(--box-shadow);
-}
 /* Dark Mode */
 @media only screen and (min-width: 64rem) {
   body.dark-mode #cs-navigation {
@@ -1071,6 +1069,11 @@ header .cs-button-solid {
     padding-top: 11.25rem;
     background-attachment: fixed;
     padding-block-end: 6.25rem;
+  }
+}
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #int-hero:before {
+    background: var(--dark);
   }
 }
 /*-- -------------------------- -->
@@ -1256,7 +1259,7 @@ header .cs-button-solid {
     justify-content: flex-start;
     align-items: center;
   }
-  #footer .right-section .lists ul:nth-of-type(3) li:last-of-type {
+  -section .lists ul:nth-of-type(3) li:last-of-type {
     margin-bottom: 0;
   }
   #footer .right-section .lists ul li {
@@ -1272,7 +1275,7 @@ header .cs-button-solid {
     color: #fff;
     transition: color 0.3s;
   }
-  #footer .right-section .lists ul li a:hover {
+  -section .lists ul li a:hover {
     color: var(--primaryLight);
   }
   #footer .right-section .lists ul h2 {
@@ -1288,7 +1291,7 @@ header .cs-button-solid {
     content: '';
     width: 6.0625rem;
     height: 0.125rem;
-    background: var(--primary);
+    background: var(--primaryLight);
     opacity: 1;
     display: block;
     position: absolute;

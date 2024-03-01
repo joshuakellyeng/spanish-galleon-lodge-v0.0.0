@@ -83,6 +83,6 @@
     background: var(--dark);
   }
   body.dark-mode #hero-219 .cs-background:before {
-    opacity: 0.85;
+    background: var(--dark);
   }
 }
