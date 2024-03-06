@@ -1,11 +1,11 @@
 :root {
   /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
-  --primary: #12234e;
-  --primaryLight: #26a69c;
-  --secondary: #e64f1f;
-  --secondaryLight: #ff9f1c;
-  --headerColor: #12234e;
-  --bodyTextColor: #4e4b66;
+  --primary: #423121;
+  --primaryLight: #876445;
+  --secondary: #685533;
+  --secondaryLight: #eec373;
+  --headerColor: #423121;
+  --bodyTextColor: #423121;
   --bodyTextColorWhite: #fafbfc;
   /* 13px - 16px */
   --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
@@ -951,11 +951,11 @@ header .cs-button-solid {
     transition: color 0.3s;
   }
   #cs-navigation .cs-li-link:hover {
-    color: var(--primaryLight);
+    color: var(--bodyTextColorWhite);
   }
   #cs-navigation .cs-li-link.cs-active {
     font-weight: 700;
-    color: var(--primaryLight);
+    color: var(--bodyTextColorWhite);
   }
   #cs-navigation .cs-nav-button {
     line-height: 2.875rem;
@@ -1404,7 +1404,7 @@ header .cs-button-solid {
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
   body.dark-mode #footer {
-    background: #061623;
+    background: var(--dark);
   }
 }
 .cs-item {

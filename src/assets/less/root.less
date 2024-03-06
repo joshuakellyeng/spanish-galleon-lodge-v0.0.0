@@ -1,11 +1,11 @@
 :root {
 	/* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
-	--primary: #12234e;
-	--primaryLight: #26a69c;
-	--secondary: #e64f1f;
-	--secondaryLight: #ff9f1c;
-	--headerColor: #12234e;
-	--bodyTextColor: #4e4b66;
+	--primary: #423121;
+	--primaryLight: #876445;
+	--secondary: #685533;
+	--secondaryLight: #eec373;
+	--headerColor: #423121;
+	--bodyTextColor: #423121;
 	--bodyTextColorWhite: #fafbfc;
 	/* 13px - 16px */
 	--topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
@@ -964,11 +964,11 @@ header .cs-button-solid {
 		transition: color 0.3s;
 	}
 	#cs-navigation .cs-li-link:hover {
-		color: var(--primaryLight);
+		color: var(--bodyTextColorWhite);
 	}
 	#cs-navigation .cs-li-link.cs-active {
 		font-weight: 700;
-		color: var(--primaryLight);
+		color: var(--bodyTextColorWhite);
 	}
 	#cs-navigation .cs-nav-button {
 		line-height: 2.875rem;
@@ -1419,10 +1419,71 @@ header .cs-button-solid {
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
 	body.dark-mode #footer {
-		background: #061623;
+		background: var(--dark);
 	}
 }
 
 .cs-item {
 	border-radius: 1.5rem;
+}
+
+/*-- -------------------------- -->
+<---           Consent           -->
+<--- -------------------------- -*/
+
+.cookie-consent-banner {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #fff;
+	box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+	color: var(--primary);
+	padding: 15px;
+	font-size: 14px;
+	text-align: center;
+	z-index: 1000;
+}
+.cookie-consent-button {
+	border: none;
+	padding: 8px 16px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 4px;
+	&:hover {
+		box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+	}
+	&:active {
+		opacity: 0.5;
+	}
+}
+.cookie-consent-button.btn-success {
+	background-color: var(--primary);
+	color: var(--bodyTextColorWhite);
+}
+.cookie-consent-button.btn-grayscale {
+	background-color: var(--primaryLight);
+	color: var(--bodyTextColorWhite);
+}
+.cookie-consent-button.btn-outline {
+	background-color: var(--secondary);
+	color: var(--bodyTextColorWhite);
+}
+.cookie-consent-options {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+	label {
+		margin: 0 10px;
+		font-size: 14px;
+	}
+	input {
+		margin-right: 5px;
+	}
 }

@@ -1,15 +1,15 @@
 {
-    "name": "Your Hotel Stay In The Heart of Cadiz",
-    "email": "help@casanautiluzcadiz.com",
+    "name": "Your Tranquil Hideaway in Cadiz",
+    "email": "SpanishGalleonLodge@gmail.com",
     "phoneForTel": "34 603 168 882",
     "phoneFormatted": "(34) 603 168 882",
     "address": {
-        "lineOne": "C. Barrocal 5, Cadiz",
+        "lineOne": "Calle Sopranis 8, Cadiz",
         "lineTwo": "",
         "city": "Cádiz",
         "state": "España",
         "zip": "11005",
-        "mapLink": "https://maps.app.goo.gl/eL3kyqyJSqmiUJ13A"
+        "mapLink": "https://maps.app.goo.gl/tt5MUiEZ9KJ3Purk6"
     },
-    "domain": "https://www.casanautiluzcadiz.com"
+    "domain": "https://www.spanishgalleonlodge.com"
 }

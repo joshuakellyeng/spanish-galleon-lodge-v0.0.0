@@ -88,7 +88,7 @@
 		<script defer src="/assets/js/faqs.js"></script>
 
 		<!-- chatbase chatbot -->
-		<script>
+		<!-- <script>
 			window.embeddedChatbotConfig = {
 				chatbotId: 'TTyvD2_1g-8-8XtvwfPgG',
 				domain: 'www.chatbase.co',
@@ -99,7 +99,7 @@
 			chatbotId="TTyvD2_1g-8-8XtvwfPgG"
 			domain="www.chatbase.co"
 			defer
-		></script>
+		></script> -->
 
 		{% block head %}{% endblock %}
 
@@ -124,6 +124,7 @@
 
 		{% include "components/header.html" %}
 		<main id="main">{% block body %}{% endblock %}</main>
-		{% include "components/footer.html" %}
+		{% include "components/footer.html" %} {% include "components/consent.html"
+		%}
 	</body>
 </html>
