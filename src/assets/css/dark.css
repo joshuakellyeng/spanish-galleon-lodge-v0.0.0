@@ -31,6 +31,12 @@
   body.dark-mode .cs-topper {
     color: var(--bodyTextColorWhite);
   }
+  body.dark-mode .cookie-consent-banner {
+    background-color: var(--dark);
+  }
+  body.dark-mode .cookie-consent-options {
+    color: var(--bodyTextColorWhite);
+  }
   .dark {
     display: none;
   }
