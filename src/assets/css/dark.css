@@ -37,6 +37,12 @@
   body.dark-mode .cookie-consent-options {
     color: var(--bodyTextColorWhite);
   }
+  body.dark-mode .jw-modal-body {
+    background-color: var(--medium);
+  }
+  body.dark-mode .jw-modal-body a {
+    color: #fff;
+  }
   .dark {
     display: none;
   }
